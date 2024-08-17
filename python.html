@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header id="pengenalan">
+        <div class="menu-button" id="menu-button">☰</div>
+        <button class="back-button">
+            <a href="index.html"><i class="fas fa-home"></i></a>
+        </button>
+        <h1>Materi Python</h1>
+        <h5>Website ini Hanya Mengajarkan Dasar-Dasar Python</h5>
+        <nav id="menu" class="hidden">
+            <ul>
+                <li>
+                    <a href="#pengenalan">Pengenalan Python</a>
+                </li>
+                <li>
+                    <a href="#sintaks">Sintaks Dasar <span class="submenu-button"></span></a>
+                    <ul class="submenu">
+                        <li><a href="#helloworld">Hello World Program</a></li>
+                        <li><a href="#komentar">Komentar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#tipe-data">Tipe Data Dasar <span class="submenu-button"></span></a>
+                    <ul class="submenu">
+                        <li><a href="#primitif">Tipe Data Primitif</a></li>
+                        <li><a href="#variabel">Variabel</a></li>
+                        <li><a href="#koleksi">Tipe Data Koleksi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#fungsi-operator">Fungsi Operator <span class="submenu-button"></span></a>
+                    <ul class="submenu">
+                        <li><a href="#aritmatika">Operator Aritmatika</a></li>
+                        <li><a href="#perbandingan">Operator Perbandingan</a></li>
+                        <li><a href="#penugasan">Operator Penugasan</a></li>
+                        <li><a href="#logika">Operator Logika</a></li>
+                        <li><a href="#bitwise">Operator Bitwise</a></li>
+                        <li><a href="#keanggotaan">Operator Keanggotaan</a></li>
+                        <li><a href="#identitas">Operator Identitas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#kontrol-alur">Kontrol Alur <span class="submenu-button"></span></a>
+                    <ul class="submenu">
+                        <li><a href="#if">If-Elif-Else</a></li>
+                        <li><a href="#for">For</a></li>
+                        <li><a href="#while">While</a></li>
+                    </ul>
+                </li>
+                <li><a href="#fungsi">Fungsi</a></li>
+                <li><a href="#struktur-data">Struktur Data</a></li>
+                <li><a href="#modul-paket">Modul dan Paket</a></li>
+                <li><a href="#penanganan-kesalahan">Penanganan Kesalahan</a></li>
+                <li><a href="#input-output">Input dan Output</a></li>
+                <li><a href="mailto:vikeshpublic@gmail.com"><i class="fas fa-phone"></i> Contact Us (Email)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Pengenalan Python</h2>
+            <p><strong>Python</strong>: Python adalah bahasa pemrograman yang mudah dipelajari. Anda bisa menggunakannya
+                untuk membuat berbagai macam program komputer, mulai dari permainan sederhana hingga aplikasi web
+                kompleks.</p>
+            <p><strong>Cara Memulai:</strong>
+            <ul>
+                <li><strong>Unduh Python:</strong> Kunjungi <a href="https://www.python.org/downloads/">Python.org</a>
+                    dan unduh versi terbaru Python sesuai dengan sistem operasi komputer Anda.</li>
+                <li><strong>IDE:</strong> Gunakan aplikasi seperti Visual Studio Code atau PyCharm untuk menulis kode
+                    Python.</li>
+                <li><strong>Menjalankan Python:</strong> Ketik <code>python</code> atau <code>python3</code> di terminal
+                    atau command prompt untuk membuka mode interaktif Python.</li>
+            </ul>
+            </p>
+        </section>
+
+        <section class="section" id="sintaks">
+            <h2>Sintaks Dasar</h2>
+            <h3 id="helloworld">Hello World Program:</h3>
+            <pre><code>print("Hello, World!")</code></pre>
+            <p><strong>Penjelasan:</strong> <code>print()</code> adalah fungsi yang digunakan untuk menampilkan teks di
+                layar. Teks di dalam tanda kutip akan ditampilkan.</p>
+
+            <h3 id="komentar">Komentar:</h3>
+            <pre><code># Ini adalah komentar satu baris
+
+"""
+Ini adalah komentar
+multibaris
+"""</code></pre>
+            <p><strong>Penjelasan:</strong> <code>#</code> digunakan untuk komentar satu baris dan tanda kutip tiga
+                untuk komentar multibaris yang tidak dijalankan oleh Python.</p>
+        </section>
+
+        <section class="section" id="tipe-data">
+            <h2>Tipe Data Dasar</h2>
+            <h3 id="primitif">Tipe Data Primitif:</h3>
+            <pre><code># Integer (Bilangan bulat)
+x = 10
+
+# Float (Bilangan desimal)
+y = 3.14
+
+# String (Teks)
+name = "Vikesh"
+
+# Boolean (Benar/Salah)
+is_active = True</code></pre>
+            <p><strong>Penjelasan:</strong></p>
+            <ul>
+                <li><strong>Integer:</strong> Angka tanpa koma, seperti <code>10</code>.</li>
+                <li><strong>Float:</strong> Angka dengan koma, seperti <code>3.14</code>.</li>
+                <li><strong>String:</strong> Teks yang ditulis dalam tanda kutip, seperti <code>"Vikesh"</code> Atau
+                    seperti <code>'Vikesh'</code></li>
+                <li><strong>Boolean:</strong> Untuk Menentukan Nilai <code>True</code> atau <code>False</code>.</li>
+            </ul>
+
+            <h3 id="variabel">Variabel:</h3>
+            <pre><code>nama= "Vikesh"
+print(nama)
+
+umur= 20
+print(umur)
+
+umur1= "dua puluh"
+print(umur1)
+
+umur_saya= 17
+_umurkamu= 14
+jarakumur= umur_saya - _umurkamu
+print(jarakumur) # hasilnya 3 (17-14)</code></pre>
+            <p><strong>Penjelasan:</strong>Variabel digunakan untuk menyimpan sebuah data, data tersebut bisa berupa
+                huruf, angka, maupun karakter spesial. Variabel ditandai dengan adanya "=" setelah sebuah kata, Contoh:
+                <code>nama= "Vikesh"</code>. Jika isi variabel merupakan <code>string</code> maka harus diapit tanda
+                petik (""/''), jika isi Variabel merupakan Interger/Float maka tidak perlu (""/''). Variabel tidak bisa
+                menggunakan spasi, untuk memisahkan kata di Variabel bisa menggunakan ( _ ).
+            </p>
+
+            <h3 id="koleksi">Tipe Data Koleksi:</h3>
+            <h4>List:</h4>
+            <pre><code>fruits = ["apple", "banana", "cherry"]</code></pre>
+            <p><strong>Penjelasan:</strong> List adalah koleksi item yang bisa diubah. Anda dapat mengakses elemen list
+                dengan indeks, urutan indeks dalam list dimulai dari 0 seperti <code>fruits[0]</code> fruits adalah
+                Variabel dan [0] adalah urutan indeks, hasil yang muncul dari mengakses indeks ke-0 adalah "apple".</p>
+
+            <h4>Tuple:</h4>
+            <pre><code>coordinates = (10, 20)</code></pre>
+            <p><strong>Penjelasan:</strong> Tuple adalah koleksi item yang tidak dapat diubah setelah dibuat. Misalnya,
+                koordinat tidak bisa diubah.</p>
+
+            <h4>Set:</h4>
+            <pre><code>unique_numbers = {1, 2, 3}</code></pre>
+            <p><strong>Penjelasan:</strong> Set adalah kumpulan item unik tanpa urutan tertentu. Set tidak
+                memperbolehkan duplikasi item. Contoh: <code>unique_numbers= {1, 2, 2, 3}</code> Set akan mendeteksi
+                adanya duplikasi item yaitu "2", maka saat code dijalankan "2" hanya muncul 1x di output.</p>
+
+            <h4>Dictionary:</h4>
+            <pre><code>person = {"name": "John", "age": 30}</code></pre>
+            <p><strong>Penjelasan:</strong> Dictionary menyimpan data dalam pasangan kunci-nilai, misalnya
+                <code>"name"</code> adalah kunci dengan nilai <code>"John"</code>.
+            </p>
+        </section>
+
+        <section class="section" id="fungsi-operator">
+            <h2>Operator dalam Python</h2>
+            <h3 id="aritmatika">Operator Aritmatika:</h3>
+            <pre><code># Penjumlahan
+a = 5 + 3    # 8
+
+# Pengurangan
+b = 10 - 2   # 8
+
+# Perkalian
+c = 4 * 3    # 12
+
+# Pembagian
+d = 9 / 3    # 3.0
+
+# Modulus
+e = 10 % 3   # 1
+
+# Pangkat
+f = 2 ** 3   # 8
+
+# Pembagian Bulat
+g = 10 // 3  # 3</code></pre>
+            <p><strong>Penjelasan:</strong> Operator aritmatika digunakan untuk operasi matematika dasar. Contohnya
+                termasuk penjumlahan (<code>+</code>), pengurangan (<code>-</code>), perkalian (<code>*</code>), dan
+                lain-lain.</p>
+
+            <h3 id="perbandingan">Operator Perbandingan:</h3>
+            <pre><code># Sama dengan
+a = (5 == 5)    # True
+
+# Tidak sama dengan
+b = (5 != 3)    # True
+
+# Lebih besar dari
+c = (5 > 3)     # True
+
+# Kurang dari
+d = (5 < 3)     # False
+
+# Lebih besar atau sama dengan
+e = (5 >= 5)    # True
+
+# Kurang dari atau sama dengan
+f = (5 <= 4)    # False</code></pre>
+            <p><strong>Penjelasan:</strong> Operator perbandingan digunakan untuk membandingkan dua nilai dan
+                mengembalikan hasil <code>True</code> atau <code>False</code>. Contohnya termasuk <code>==</code> untuk
+                sama dengan dan <code>!=</code> untuk tidak sama dengan.</p>
+
+            <h3 id="penugasan">Operator Penugasan:</h3>
+            <pre><code># Penugasan Sederhana
+a = 5
+
+# Penugasan dengan Penambahan
+a += 3    # a = a + 3, jadi a sekarang 8
+
+# Penugasan dengan Pengurangan
+a -= 2    # a = a - 2, jadi a sekarang 6
+
+# Penugasan dengan Perkalian
+a *= 4    # a = a * 4, jadi a sekarang 24
+
+# Penugasan dengan Pembagian
+a /= 3    # a = a / 3, jadi a sekarang 8.0
+
+# Penugasan dengan Modulus
+a %= 4    # a = a % 4, jadi a sekarang 0
+
+# Penugasan dengan Pangkat
+a **= 2   # a = a ** 2, jadi a sekarang 0</code></pre>
+            <p><strong>Penjelasan:</strong> Operator penugasan digunakan untuk memberikan nilai baru pada variabel,
+                sering kali dengan menggabungkan operasi aritmatika. Contohnya termasuk <code>=</code>, <code>+=</code>,
+                dan <code>*=</code>.</p>
+
+            <h3 id="logika">Operator Logika:</h3>
+            <pre><code># Dan Logika
+a = True and False    # False
+
+# Atau Logika
+b = True or False     # True
+
+# Negasi Logika
+c = not True          # False</code></pre>
+            <p><strong>Penjelasan:</strong> Operator logika digunakan untuk melakukan operasi logika pada nilai boolean.
+                Contohnya termasuk <code>and</code>, <code>or</code>, dan <code>not</code>.</p>
+
+            <h3 id="bitwise">Operator Bitwise:</h3>
+            <pre><code># AND Bitwise
+a = 5 & 3     # 1 (0101 & 0011 = 0001)
+
+# OR Bitwise
+b = 5 | 3     # 7 (0101 | 0011 = 0111)
+
+# XOR Bitwise
+c = 5 ^ 3     # 6 (0101 ^ 0011 = 0110)
+
+# NOT Bitwise
+d = ~5        # -6 (inversi bit dari 0101)
+
+# Shift Kiri
+e = 5 &lt;&lt; 1    # 10 (0101 &lt;&lt; 1 = 1010)
+
+# Shift Kanan
+f = 5 >> 1    # 2 (0101 >> 1 = 0010)</code></pre>
+            <p><strong>Penjelasan:</strong></p>
+            <ul>
+                <li><strong>AND Bitwise (&):</strong> Membandingkan setiap bit dari dua angka biner. Jika kedua bit
+                    bernilai '1', hasilnya adalah '1'. Jika salah satu atau kedua bit bernilai '0', hasilnya adalah '0'.
+                    Contoh: <code>5 & 3</code> (0101 & 0011) menghasilkan 1 (0001).</li>
+                <li><strong>OR Bitwise (|):</strong> Membandingkan setiap bit dari dua angka biner. Jika salah satu atau
+                    kedua bit bernilai '1', hasilnya adalah '1'. Jika kedua bit bernilai '0', hasilnya adalah '0'.
+                    Contoh: <code>5 | 3</code> (0101 | 0011) menghasilkan 7 (0111).</li>
+                <li><strong>XOR Bitwise (^):</strong> Membandingkan setiap bit dari dua angka biner. Jika kedua bit
+                    berbeda, hasilnya adalah '1'. Jika kedua bit sama, hasilnya adalah '0'. Contoh: <code>5 ^ 3</code>
+                    (0101 ^ 0011) menghasilkan 6 (0110).</li>
+                <li><strong>NOT Bitwise (~):</strong> Membalik setiap bit dari angka biner. Hasilnya adalah negatif dari
+                    nilai plus satu dari hasil inversi dalam representasi Two's Complement. Contoh: <code>~5</code>
+                    (inversi dari 0101) menghasilkan -6.</li>
+                <li><strong>Shift Kiri (&lt;&lt;): </strong> Menggeser semua bit dalam angka biner ke kiri sebanyak
+                    jumlah
+                    tertentu, setara dengan mengalikan angka dengan 2. Contoh: <code>5 &lt;&lt; 1</code> (0101 &lt;&lt;
+                    1)
+                    menghasilkan 10 (1010).</li>
+                <li><strong>Shift Kanan (>>):</strong> Menggeser semua bit dalam angka biner ke kanan sebanyak jumlah
+                    tertentu, setara dengan membagi angka dengan 2. Contoh: <code>5 >> 1</code> (0101 >> 1) menghasilkan
+                    2 (0010).</li>
+            </ul>
+            <h3 id="keanggotaan">Operator Keanggotaan:</h3>
+            <pre><code># Dalam Operator
+a = 5
+b = [1, 2, 3, 4, 5]
+result = a in b   # True
+
+# Tidak Dalam Operator
+result = 10 not in b   # True</code></pre>
+            <p><strong>Penjelasan:</strong> Operator keanggotaan digunakan untuk memeriksa apakah suatu nilai berada di
+                dalam sebuah koleksi. Contohnya termasuk <code>in</code> dan <code>not in</code>.</p>
+
+            <h3 id="identitas">Operator Identitas:</h3>
+            <pre><code># Identik
+a = [1, 2, 3]
+b = a
+result = a is b   # True
+
+# Tidak Identik
+c = [1, 2, 3]
+result = a is not c   # True</code></pre>
+            <p><strong>Penjelasan:</strong> Operator identitas digunakan untuk memeriksa apakah dua variabel merujuk
+                pada objek yang sama. Contohnya termasuk <code>is</code> dan <code>is not</code>.</p>
+        </section>
+
+        <section class="section" id="kontrol-alur">
+            <h2>Kontrol Alur</h2>
+            <h3 id="if">IF, Elif, Else:</h3>
+            <pre><code>age = 18
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")</code></pre>
+            <pre><code>age = 18
+if age>=18:
+    print("Adult")
+elif age>= 12 and age<18:
+    print("Teenager")
+else:
+    print("Baby")</code></pre>
+            <p><strong>Penjelasan:</strong> <code>if</code> digunakan untuk memeriksa kondisi. Jika <code>age</code>
+                lebih besar atau sama dengan 18, mencetak "Adult". Jika tidak, mencetak "Minor". <code> elif</code>
+                digunakan sebagai if ke-2, Jadi kalau if pertama tidak valid/false, python akan melihat elif atau if
+                ke-2 terlebih dahulu sebelum melihat fungsi else. Contoh diatas menunjukan Jika
+                <code>age</code> lebih besar atau sama dengan 18, akan mencetak "Adult", dan kalau <code>age</code>
+                lebih besar atau sama dengan 12 dan dibawah 18, akan mencetak "Teenager", Jika kedua kondisi tidak
+                sesuai/false "Baby" akan di cetak
+            </p>
+
+            <h3>Perulangan:</h3>
+            <h4 id="for">For loop:</h4>
+            <pre><code>for i in range(5):
+    print(i)</code></pre>
+            <p><strong>Penjelasan:</strong> <code>for</code> loop digunakan untuk mengulang kode sejumlah kali.
+                <code>range(5)</code> menghasilkan angka dari 0 hingga 4.
+            </p>
+
+            <h4 id="while">While loop:</h4>
+            <pre><code>count = 0
+while count < 5:
+    print(count)
+    count += 1</code></pre>
+            <p><strong>Penjelasan:</strong> <code>while</code> loop mengulang kode selama kondisi <code>count < 5</code>
+                masih benar/true. Nilai <code>count</code> bertambah setiap kali loop dijalankan.</p>
+        </section>
+
+        <section class="section" id="fungsi">
+            <h2>Fungsi</h2>
+            <h3>Definisi Fungsi:</h3>
+            <pre><code>def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Vikesh")) # hasil "Hello, Vikesh"</code></pre>
+            <p><strong>Penjelasan:</strong> <code>def</code> digunakan untuk mendefinisikan fungsi.
+                <code>greet(name)</code> mengembalikan sapaan dengan nama yang diberikan.
+            </p>
+
+            <h3>Fungsi dengan Argumen Default:</h3>
+            <pre><code>def power(base, exponent=2):
+    return base ** exponent
+
+print(power(3))    # 9, karena exponent default 2
+print(power(3, 3)) # 27</code></pre>
+            <p><strong>Penjelasan:</strong> Jika tidak memberikan nilai untuk <code>exponent</code>, nilai default 2
+                digunakan. Fungsi ini menghitung <code>base</code> dipangkatkan dengan <code>exponent</code>.</p>
+        </section>
+
+        <section class="section" id="struktur-data">
+            <h2>Struktur Data</h2>
+            <h3>List Operations:</h3>
+            <pre><code>numbers = [1, 2, 3, 4, 5]
+numbers.append(6)         # Menambahkan elemen
+print(numbers[2])         # Mengakses elemen</code></pre>
+            <p><strong>Penjelasan:</strong> <code>append()</code> menambahkan elemen baru ke list.
+                <code>numbers[2]</code> mengakses elemen ketiga dalam list, karna list index <code>numbers[2]</code>
+                dimulai dari 0, jadi code itu akan mengakses data ke-3 dari list diatas.
+            </p>
+
+            <h3>Dictionary Operations:</h3>
+            <pre><code>person = {"name": "John", "age": 30}
+print(person["name"])    # Mengakses nilai dari kunci "name" yaitu John</code></pre>
+            <p><strong>Penjelasan:</strong> Mengakses nilai di dictionary menggunakan kunci, seperti
+                <code>person["name"]</code> untuk mendapatkan nama.
+            </p>
+        </section>
+
+        <section class="section" id="modul-paket">
+            <h2>Modul dan Paket</h2>
+            <h3>Import Modul:</h3>
+            <pre><code>import math
+print(math.sqrt(16))  # Menggunakan fungsi sqrt dari modul math</code></pre>
+            <p><strong>Penjelasan:</strong> Modul adalah kumpulan kode yang telah dibuat sebelumnya. Anda bisa
+                menggunakan fungsinya seperti <code>math.sqrt()</code> untuk menghitung akar kuadrat.</p>
+
+            <h3>Membuat Modul Sendiri:</h3>
+            <pre><code># Buat file mymodule.py
+def say_hello(name):
+    return f"Hello, {name}!"
+</code></pre>
+            <p><strong>Penjelasan:</strong> Anda dapat membuat modul sendiri dengan menyimpan fungsi dalam file Python.
+                File ini kemudian bisa diimpor ke file Python lain.</p>
+
+            <pre><code># Gunakan modul dalam file lain
+import mymodule
+print(mymodule.say_hello("Vikesh"))</code></pre>
+            <p><strong>Penjelasan:</strong> Anda mengimpor modul <code>mymodule</code> dan menggunakan fungsinya
+                <code>say_hello()</code>.
+            </p>
+        </section>
+
+        <section class="section" id="penanganan-kesalahan">
+            <h2>Penanganan Kesalahan</h2>
+            <h3>Try-Except Block:</h3>
+            <pre><code>try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")</code></pre>
+            <p><strong>Penjelasan:</strong> <code>try</code> digunakan untuk menjalankan kode yang mungkin menyebabkan
+                kesalahan. <code>except</code> menangani kesalahan yang terjadi, dalam hal ini, pembagian dengan nol.
+            </p>
+        </section>
+
+        <section class="section" id="input-output">
+            <h2>Input dan Output</h2>
+            <h3>Membaca Input dari Pengguna:</h3>
+            <pre><code>name = input("Enter your name: ")
+print(f"Hello, {name}!")
+
+name= str(input("Enter your name: ")) # input ini hanya menerima string
+age= int(input("Enter your Age: ")) # input ini hanya menerima interger
+weight= float(input("Enter your Weight: ")) # input ini hanya menerima Float
+print(f"This Is Your Data, Name: {name}, Age: {age}, Weight: {weight}.")</code></pre>
+            <p><strong>Penjelasan:</strong> <code>input()</code> meminta pengguna memasukkan teks yang kemudian
+                digunakan dalam program. Dengan Menaruh <code>str/int/float()</code> sebelum input maka kamu akan
+                menaruh "peraturan" pada input itu, yaitu <code>str()</code> membuat input hanya menerima input
+                berbentuk string saja, <code>int()</code> membuat input hanya menerima input berbentuk interger/bilangan
+                bulat saja, <code>float()</code> membuat input hanya menerima input berbentuk float/desimal saja.</p>
+
+            <h3>Menulis ke File:</h3>
+            <pre><code>with open('example.txt', 'w') as file:
+    file.write("Hello, file!")</code></pre>
+            <p><strong>Penjelasan:</strong> <code>with open()</code> membuka file dalam mode tulis dan menulis teks ke
+                dalamnya. Jika file tidak ada, Python akan membuatnya.</p>
+
+            <h3>Membaca dari File:</h3>
+            <pre><code>with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)</code></pre>
+            <p><strong>Penjelasan:</strong> <code>with open()</code> membuka file dalam mode baca dan membaca isinya.
+                Kemudian, isinya dicetak ke layar.</p>
+        </section>
+
+        <section class="section source-info">
+            <h2>More Information</h2>
+            <p>Informasi Tambahan yang Lebih Detail & Lengkap dan Bisa Anda Pelajari Sendiri:</p>
+            <ul>
+                <li><a href="https://docs.python.org/3/tutorial/index.html" target="_blank">-Python.org</a></li>
+                <li><a href="https://www.codecademy.com/catalog/language/python?g_network=g&g_productchannel=&g_adid=624951457618&g_locinterest=&g_keyword=codecademy&g_acctid=243-039-7011&g_adtype=&g_keywordid=kwd-41065460761&g_ifcreative=&g_campaign=account&g_locphysical=9128218&g_adgroupid=70492864474&g_productid=&g_source={sourceid}&g_merchantid=&g_placement=&g_partition=&g_campaignid=1726903838&g_ifproduct=&utm_id=t_kwd-41065460761:ag_70492864474:cp_1726903838:n_g:d_c&utm_source=google&utm_medium=paid-search&utm_term=codecademy&utm_campaign=INTL_Brand_Exact&utm_content=624951457618&g_adtype=search&g_acctid=243-039-7011&gad_source=1&gclid=Cj0KCQjwlIG2BhC4ARIsADBgpVRQ5L5xAGwro3-n0itQBW9_8n5VE65U9SXW-DFWuVGFNTyQx8Rw2HEaAq51EALw_wcB"
+                        target="_blank">-Codecademy.com</a>
+                </li>
+                <li><a href="https://www.coursera.org/specializations/python" target="_blank">-Coursera.org</a></li>
+            </ul>
+            <p>Link diatas akan menambah ilmu dan pemahaman Python anda.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made By <b>Vikesh</b></p>
+        <p>© 2024 Materi Python</p>
+        <p><a href="mailto:vikeshpublic@gmail.com" class="contact-link"><i class="fas fa-phone"></i> Hubungi Kami</a>
+        </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

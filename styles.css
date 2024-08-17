@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+    font-family: 'Quicksand';
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0c4b6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #4b2e2e;
+    color: #f0c4b6;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h5 {
+    margin-top: -5px;
+    margin-bottom: 0;
+}
+
+
+.menu-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #7e4c4c;
+    color: #f0c4b6;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s;
+    transform: translateY(25%);
+    opacity: 95%;
+}
+
+.back-button {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    margin-left: 50px;
+    display: inline-flex;
+    align-items: left;
+    padding: 15px 15px;
+    border: none;
+    background-color: #4b2e2e;
+    color: auto;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.fa-home {
+    color: #f0c4b6;
+}
+
+.fa-home:hover {
+    color: #d3c5c5;
+}
+
+.menu-button:hover {
+    background-color: #f0c4b6;
+    color: #7e4c4c;
+}
+
+.auto nav {
+    height: auto;
+}
+
+nav {
+    position: fixed;
+    top: 70px;
+    left: 10px;
+    background-color: #7e4c4c;
+    color: #f0c4b6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 230px;
+    height: 300px;
+    max-height: 0;
+    overflow-y: auto;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.8s ease;
+    scrollbar-width: none;
+    scrollbar-color: #7e4c4c #d3c5c5;
+}
+
+
+nav.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+
+nav.visible {
+    max-height: 300px;
+    /* Adjust based on content */
+    opacity: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav>ul>li {
+    position: relative;
+}
+
+nav>ul>li>a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #7e4c4c;
+}
+
+nav>ul>li>a:hover {
+    background-color: #f0c4b6;
+    color: #7e4c4c;
+}
+
+.submenu {
+    display: none;
+    padding-left: 5px;
+    background-color: #f0c4b6;
+    border-left: 2px solid #7e4c4c;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #7e4c4c;
+}
+
+.submenu-button {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.submenu-button:hover {
+    color: #7e4c4c;
+}
+
+.submenu-button::before {
+    content: '→';
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.submenu-button.open::before {
+    content: '↓';
+}
+
+/* Styling untuk scrollbar pada WebKit browsers */
+nav::-webkit-scrollbar {
+    width: 0px;
+    /* Lebar scrollbar menjadi 0 */
+    background: transparent;
+    /* Lebar scrollbar */
+}
+
+nav::-webkit-scrollbar-track {
+    background: #d3c5c5;
+    /* Warna latar belakang track scrollbar */
+    border-radius: 10px;
+}
+
+nav::-webkit-scrollbar-thumb {
+    background: #7e4c4c;
+    /* Warna scrollbar thumb */
+    border-radius: 10px;
+}
+
+nav::-webkit-scrollbar-thumb:hover {
+    background: #4b2e2e;
+    /* Warna scrollbar thumb saat hover */
+}
+
+/* Styling bagian utama */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.section {
+    background-color: #d3c5c5;
+    /* Warna latar belakang bagian */
+    color: #4b2e2e;
+    /* Warna teks bagian */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.section h2 {
+    color: #4b2e2e;
+    /* Warna teks h2 */
+}
+
+ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+pre {
+    background: #7e4c4c;
+    /* Warna latar belakang untuk kode */
+    color: #f0c4b6;
+    /* Warna teks untuk kode */
+    border: 1px solid #4b2e2e;
+    border-radius: 4px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+pre code {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+footer {
+    background: #4b2e2e;
+    /* Warna footer */
+    color: #f0c4b6;
+    /* Warna teks di footer */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    /* Memastikan footer berada di bawah */
+}
+
+footer b {
+    color: bisque;
+}
+
+footer a {
+    color: bisque;
+}
+
+/* Styling bagian Source and More Information */
+.source-info {
+    background-color: #7e4c4c;
+    /* Warna latar belakang untuk section ini */
+    color: #f0c4b6;
+    /* Warna teks */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.source-info h2 {
+    color: #f0c4b6;
+    /* Warna teks h2 */
+}
+
+.source-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.source-info ul li {
+    margin: 10px 0;
+}
+
+.source-info ul li a {
+    color: #f0c4b6;
+    text-decoration: none;
+}
+
+.source-info ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        header {
+            width: 100%;
+            margin-top: -1px;
+            margin-left: -1px;
+            margin-top: -1px;
+        }
+    }
+
+    .menu-button {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .back-button {
+        font-size: 20px;
+        padding: 10px;
+        margin-right: 40px;
+    }
+
+    nav {
+        top: 60px;
+        width: 75px;
+        height: 150px;
+        /* Sesuaikan tinggi dengan konten */
+        max-height: 400px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+
+/* Media query untuk ponsel dan perangkat dengan lebar maksimal 480px */
+@media (max-width: 480px) {
+    header {
+        header {
+            width: 100%;
+            margin-top: -1px;
+            margin-left: -1px;
+            margin-top: -1px;
+        }
+    }
+
+    .menu-button {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .back-button {
+        font-size: 18px;
+        padding: 10px;
+        margin-right: 30px;
+    }
+
+    nav {
+        top: 50px;
+        width: 75px;
+        height: 150px;
+        /* Mengisi lebar penuh */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        font-size: 14px;
+        /* Mengurangi ukuran font */
+        padding: 5px;
+        /* Mengurangi padding */
+    }
+
+    header {
+        width: 100%;
+        margin-top: -1px;
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        padding: 15px 10px;
+    }
+
+    .menu-button {
+        width: 30px;
+        /* Mengurangi ukuran tombol menu */
+        height: 30px;
+        font-size: 20px;
+        /* Mengurangi ukuran font icon */
+    }
+
+    .back-button {
+        font-size: 20px;
+        margin-right: 20px;
+        right: 5px;
+    }
+
+    nav {
+        width: 120px;
+        /* Lebar menu navigasi dikurangi lebih lanjut */
+        max-height: 300px;
+        /* Tinggi maksimum menu navigasi dikurangi */
+        top: 50px;
+        /* Jarak dari atas dikurangi */
+    }
+
+    nav ul li a {
+        padding: 6px;
+        /* Padding link navigasi dikurangi lagi */
+        font-size: 12px;
+        /* Ukuran font link navigasi dikurangi */
+    }
+
+
+    main {
+        padding: 10px;
+        /* Mengurangi padding utama */
+    }
+
+    .section {
+        padding: 15px;
+        /* Mengurangi padding section */
+        font-size: 14px;
+        /* Mengurangi ukuran font section */
+    }
+
+    .source-info {
+        padding: 15px;
+        /* Mengurangi padding source info */
+        font-size: 14px;
+        /* Mengurangi ukuran font source info */
+    }
+
+    footer {
+        padding: 8px 0;
+        /* Mengurangi padding footer */
+        font-size: 12px;
+        /* Mengurangi ukuran font footer */
+    }
+}

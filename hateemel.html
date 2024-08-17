@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header id="html">
+        <div class="menu-button" id="menu-button">☰</div>
+        <button class="back-button">
+            <a href="index.html"><i class="fas fa-home"></i></a>
+        </button>
+        <h1>Materi HTML dan CSS</h1>
+        <h5>Website ini Hanya Mengajarkan Dasar-Dasar & CSS</h5>
+        <div class="auto">
+            <nav id="menu" class="hidden">
+                <ul>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#gaya">Menambahkan Gaya</a></li>
+                    <li><a href="#layout">Layout</a></li>
+                    <li><a href="#media">Media Queries</a></li>
+                    <li><a href="mailto:vikeshpublic@gmail.com"><i class="fas fa-phone"></i> Contact Us (Email)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>HTML (HyperText Markup Language)</h2>
+            <p>HTML adalah bahasa markup yang digunakan untuk membuat struktur dasar halaman web. HTML menggunakan
+                elemen atau tag untuk menentukan berbagai bagian dari halaman, seperti teks, gambar, link, dan formulir.
+            </p>
+            <h3>Struktur Dasar HTML:</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Contoh Halaman&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Selamat Datang di Halaman Web&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Beranda&lt;/a&gt;&lt;/li&gt;&lt;br&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;Tentang&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Kontak&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section id="home"&gt;
+            &lt;h2&gt;Beranda&lt;/h2&gt;
+            &lt;p&gt;Ini adalah bagian beranda dari halaman web.&lt;/p&gt;
+            &lt;hr&gt;
+        &lt;/section&gt;
+        &lt;section id="about"&gt;
+            &lt;h2&gt;Tentang&lt;/h2&gt;
+            &lt;p&gt;Ini adalah bagian tentang dari halaman web.&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section id="contact"&gt;
+            &lt;h2&gt;Kontak&lt;/h2&gt;
+            &lt;form&gt;
+                &lt;label for="name"&gt;Nama:&lt;/label&gt;
+                &lt;input type="text" id="name" name="name" required&gt;
+                &lt;label for="email"&gt;Email:&lt;/label&gt;
+                &lt;input type="email" id="email" name="email" required&gt;
+                &lt;button type="submit"&gt;Kirim&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 Hak Cipta&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+            <h3>Penjelasan Tag HTML:</h3>
+            <ul>
+                <li><strong><code>&lt;!DOCTYPE html&gt;</code></strong>: Mendeklarasikan jenis dokumen sebagai HTML5.
+                </li>
+                <li><strong><code>&lt;html&gt;</code></strong>: Elemen root dari dokumen HTML. Semua elemen lainnya
+                    berada di dalam tag ini.</li>
+                <li><strong><code>&lt;head&gt;</code></strong>: Bagian metadata dari dokumen yang tidak terlihat di
+                    halaman web. Ini termasuk pengaturan karakter, tautan ke file CSS, dan judul halaman.</li>
+                <li><strong><code>&lt;meta charset="UTF-8"&gt;</code></strong>: Mengatur set karakter yang digunakan
+                    dalam halaman (UTF-8 adalah set karakter yang paling umum digunakan).</li>
+                <li><strong><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></strong>:
+                    Mengatur cara halaman ditampilkan pada perangkat seluler, termasuk lebar dan skala awal.</li>
+                <li><strong><code>&lt;title&gt;</code></strong>: Menentukan judul halaman yang ditampilkan di bilah
+                    judul browser atau tab.</li>
+                <li><strong><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></strong>: Menautkan file CSS
+                    eksternal ke halaman HTML untuk mengatur styling.</li>
+                <li><strong><code>&lt;body&gt;</code></strong>: Bagian utama dari dokumen yang berisi konten yang
+                    ditampilkan di halaman web, seperti teks, gambar, dan formulir.</li>
+                <li><strong><code>&lt;header&gt;</code></strong>: Bagian di bagian atas halaman yang biasanya berisi
+                    judul dan navigasi.</li>
+                <li><strong><code>&lt;nav&gt;</code></strong>: Bagian yang berisi tautan navigasi untuk berpindah antara
+                    bagian berbeda dari halaman atau ke halaman lain.</li>
+                <li><strong><code>&lt;ul&gt;</code></strong>: Daftar tanpa urutan, biasanya digunakan untuk menampilkan
+                    item dalam format daftar.</li>
+                <li><strong><code>&lt;li&gt;</code></strong>: Elemen daftar yang merupakan item di dalam daftar.</li>
+                <li><strong><code>&lt;a&gt;</code></strong>: Tag tautan yang digunakan untuk membuat hyperlink ke
+                    halaman lain atau bagian lain dari halaman yang sama.</li>
+                <li><strong><code>&lt;main&gt;</code></strong>: Bagian utama dari halaman yang berisi konten inti yang
+                    relevan dengan topik utama halaman.</li>
+                <li><strong><code>&lt;section&gt;</code></strong>: Digunakan untuk membagi halaman menjadi bagian-bagian
+                    yang berbeda. Setiap bagian bisa memiliki heading dan konten terkait.</li>
+                <li><strong><code>&lt;h1&gt;, &lt;h2&gt;</code></strong>: Tag heading yang digunakan untuk menentukan
+                    judul atau subjudul di halaman. <code>&lt;h1&gt;</code> adalah heading utama, sedangkan
+                    <code>&lt;h2&gt;</code> adalah sub-heading.
+                </li>
+                <li><strong><code>&lt;p&gt;</code></strong>: Tag paragraf yang digunakan untuk membungkus teks paragraf.
+                </li>
+                <li><strong><code>&lt;form&gt;</code></strong>: Tag formulir yang digunakan untuk mengumpulkan data dari
+                    pengguna. Biasanya berisi elemen formulir seperti <code>&lt;input&gt;</code> dan
+                    <code>&lt;button&gt;</code>.
+                </li>
+                <li><strong><code>&lt;label&gt;</code></strong>: Menyediakan label untuk elemen formulir seperti
+                    <code>&lt;input&gt;</code>, meningkatkan aksesibilitas dan pengalaman pengguna.
+                </li>
+                <li><strong><code>&lt;input&gt;</code></strong>: Tag input yang digunakan untuk memasukkan data ke dalam
+                    formulir, seperti teks dan email.</li>
+                <li><strong><code>&lt;button&gt;</code></strong>: Tag tombol yang digunakan untuk mengirimkan formulir
+                    atau melakukan aksi lainnya.</li>
+                <li><strong><code>&lt;footer&gt;</code></strong>: Bagian di bagian bawah halaman yang biasanya berisi
+                    informasi hak cipta, tautan, atau catatan tambahan.</li>
+                <li><strong><code>&lt;br&gt;</code></strong>: Digunakan untuk membuat pemutusan baris di dalam teks. Ini
+                    sangat berguna ketika Anda ingin memasukkan baris baru di dalam teks tanpa menggunakan elemen blok.
+                </li>
+                <li><strong><code>&lt;hr&gt;</code></strong>: Digunakan untuk menambahkan garis horizontal di halaman
+                    web. Ini biasanya digunakan untuk memisahkan konten atau bagian yang berbeda dalam sebuah halaman.
+                </li>
+            </ul>
+        </section>
+        <section class="section" id="css">
+            <h2>CSS (Cascading Style Sheets)</h2>
+            <p>CSS digunakan untuk mengatur tampilan elemen HTML. Dengan CSS, Anda dapat mengubah warna, font, margin,
+                padding, dan aspek visual lainnya dari elemen HTML.</p>
+            <h3>Contoh File CSS:</h3>
+            <pre><code>/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+</code></pre>
+            <h3>Penjelasan Properti CSS:</h3>
+            <ul>
+                <li><strong><code>body { font-family: Arial, sans-serif; }</code></strong>: Mengatur font dasar untuk
+                    seluruh halaman menggunakan font Arial atau font sans-serif alternatif.</li>
+                <li><strong><code>header { background-color: #333; }</code></strong>: Mengatur warna latar belakang
+                    header menjadi warna gelap (#333).</li>
+                <li><strong><code>nav ul { list-style-type: none; }</code></strong>: Menghapus tanda bullet dari daftar
+                    navigasi.</li>
+                <li><strong><code>nav ul li { display: inline; }</code></strong>: Menampilkan item daftar navigasi dalam
+                    satu baris, bukan dalam format daftar vertikal.</li>
+                <li><strong><code>nav ul li a { color: #fff; }</code></strong>: Mengatur warna teks tautan di dalam
+                    daftar navigasi menjadi putih (#fff).</li>
+                <li><strong><code>nav ul li a:hover { text-decoration: underline; }</code></strong>: Menambahkan garis
+                    bawah pada tautan saat mouse berada di atasnya.</li>
+                <li><strong><code>main { padding: 20px; }</code></strong>: Menambahkan padding di sekitar konten utama
+                    halaman.</li>
+                <li><strong><code>form { background-color: #fff; }</code></strong>: Mengatur warna latar belakang
+                    formulir menjadi putih (#fff).</li>
+                <li><strong><code>form label { display: block; }</code></strong>: Menampilkan label formulir sebagai
+                    elemen blok agar muncul di baris baru.</li>
+                <li><strong><code>form input { width: 100%; }</code></strong>: Mengatur lebar input formulir agar
+                    memenuhi lebar elemen formulir.</li>
+                <li><strong><code>form button { background-color: #333; }</code></strong>: Mengatur warna latar belakang
+                    tombol formulir menjadi gelap (#333).</li>
+                <li><strong><code>form button:hover { background-color: #555; }</code></strong>: Mengubah warna latar
+                    belakang tombol saat mouse berada di atasnya.</li>
+                <li><strong><code>footer { background-color: #333; }</code></strong>: Mengatur warna latar belakang
+                    footer menjadi gelap (#333) dan memastikan footer tetap berada di bagian bawah halaman.</li>
+            </ul>
+        </section>
+        <section class="section" id="gaya">
+            <h2>Menambahkan Gaya dengan CSS</h2>
+            <p>CSS memungkinkan Anda untuk mengubah tampilan elemen HTML:</p>
+            <ul>
+                <li><strong>Background Color:</strong> Mengatur warna latar belakang dengan
+                    <code>background-color</code>.
+                </li>
+                <li><strong>Text Color:</strong> Mengatur warna teks dengan <code>color</code>.</li>
+                <li><strong>Font Size:</strong> Mengatur ukuran font dengan <code>font-size</code>.</li>
+                <li><strong>Padding:</strong> Mengatur ruang di dalam elemen dengan <code>padding</code>.</li>
+                <li><strong>Margin:</strong> Mengatur ruang di luar elemen dengan <code>margin</code>.</li>
+                <li><strong>Border:</strong> Mengatur garis batas elemen dengan <code>border</code>.</li>
+            </ul>
+        </section>
+        <section class="section" id="layout">
+            <h2>Layout dengan CSS</h2>
+            <p>CSS juga digunakan untuk mengatur tata letak halaman:</p>
+            <ul>
+                <li><strong>Box Model:</strong> Mengatur ukuran elemen dengan <code>width</code>, <code>height</code>,
+                    <code>padding</code>, <code>border</code>, dan <code>margin</code>.
+                </li>
+                <li><strong>Flexbox:</strong> Mengatur elemen dalam baris atau kolom dengan <code>display: flex</code>.
+                </li>
+                <li><strong>Grid:</strong> Membuat tata letak berbasis grid dengan <code>display: grid</code>.</li>
+            </ul>
+        </section>
+        <section class="section" id="media">
+            <h2>Media Queries</h2>
+            <p>Media Queries digunakan untuk membuat desain responsif yang beradaptasi dengan berbagai ukuran layar:</p>
+            <pre><code>@media (max-width: 600px) {
+    header {
+        font-size: 14px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+</code></pre>
+            <p><code>@media (max-width: 600px)</code>: Mengatur gaya yang diterapkan pada layar dengan lebar maksimal
+                600px, sering digunakan untuk perangkat mobile.</p>
+        </section>
+
+        <section class="section source-info">
+            <h2>More Information</h2>
+            <p>Informasi Tambahan yang Lebih Detail & Lengkap dan Bisa Anda Pelajari Sendiri:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">-MDN Web Docs
+                        (HTML) /</a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"> MDN Web Docs (CSS)</a>
+                </li>
+                <li><a href="https://www.freecodecamp.org/news/tag/html/" target="_blank">-freeCodeCamp (HTML) /</a><a
+                        href="https://www.freecodecamp.org/news/tag/css/" target="_blank"> freeCodeCamp (CSS)</a>
+                </li>
+                <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">-W3Schools (HTML) /</a><a
+                        href="https://www.w3schools.com/css/default.asp" target="_blank"> W3Schools (CSS)</a></li>
+            </ul>
+            <p>Link diatas akan menambah ilmu dan pemahaman anda untuk Python</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made By <b>Vikesh</b></p>
+        <p>© 2024 Materi Python</p>
+        <p><a href="mailto:vikeshpublic@gmail.com" class="contact-link"><i class="fas fa-phone"></i> Hubungi Kami</a>
+        </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

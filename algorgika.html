@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logika dan Algoritma</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header id="pengenalan">
+        <div class="menu-button" id="menu-button">☰</div>
+        <button class="back-button">
+            <a href="index.html"><i class="fas fa-home"></i></a>
+        </button>
+        <h1>Logika dan Algoritma</h1>
+        <h5>Website ini Hanya Mengajarkan Dasar Pemahaman Logika & Algoritma</h5>
+        <nav id="menu" class="hidden">
+            <ul>
+                <li><a href="#pengenalan">Pengenalan</a></li>
+                <li><a href="#logika-dasar">Logika Dasar</a></li>
+                <li><a href="#struktur-kontrol">Struktur Kontrol</a></li>
+                <li><a href="#algoritma-dasar">Algoritma Dasar</a></li>
+                <li><a href="#pseudocode">Pseudocode</a></li>
+                <li><a href="#variabel">Variabel dan Tipe Data</a></li>
+                <li><a href="#operasi-aritmatika">Operasi Aritmatika</a></li>
+                <li><a href="#struktur-data">Struktur Data Dasar</a></li>
+                <li><a href="#fungsi-prosedur">Fungsi dan Prosedur</a></li>
+                <li><a href="#debugging">Debugging dan Uji Coba</a></li>
+                <li><a href="mailto:vikeshpublic@gmail.com"><i class="fas fa-phone"></i> Contact Us (Email)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <h2>Pengenalan</h2>
+            <p><strong>Logika</strong>: Cara kita membuat keputusan. Anggap Logika sebagai aturan atau petunjuk yang
+                membantu kita menentukan apa yang harus dilakukan dalam situasi tertentu.</p>
+            <p><strong>Algoritma</strong>: Serangkaian langkah yang kita ambil untuk menyelesaikan sebuah tugas. Anggap
+                algoritma sebagai resep memasak; ia memberi tahu Anda langkah demi langkah apa yang harus dilakukan
+                untuk membuat hidangan.</p>
+        </section>
+
+        <section class="section" id="logika-dasar">
+            <h2>Logika Dasar</h2>
+            <h3>Pernyataan Logika</h3>
+            <ul>
+                <li><strong>AND (Dan)</strong>: Dua hal harus benar secara bersamaan.
+                    <p><strong>Contoh Sehari-hari:</strong> "Saya akan pergi ke pesta jika saya mendapatkan undangan DAN
+                        saya sudah selesai dengan pekerjaan rumah."</p>
+                </li>
+                <li><strong>OR (Atau)</strong>: Salah satu dari dua hal harus benar.
+                    <p><strong>Contoh Sehari-hari:</strong> "Saya akan menonton film jika saya punya waktu LUANG atau
+                        jika saya tidak ada pekerjaan yang mendesak."</p>
+                </li>
+                <li><strong>NOT (Tidak)</strong>: Membalikkan nilai dari sesuatu.
+                    <p><strong>Contoh Sehari-hari:</strong> "Saya tidak akan pergi ke luar jika hujan."</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section" id="struktur-kontrol">
+            <h2>Struktur Kontrol</h2>
+            <h3>Percabangan (If-Else)</h3>
+            <p>Memilih tindakan berdasarkan kondisi tertentu.</p>
+            <p><strong>Contoh Sehari-hari:</strong> "Jika cuaca cerah, saya akan berjalan-jalan di taman. Jika tidak,
+                saya akan tinggal di rumah dan membaca buku."</p>
+
+            <h3>Perulangan (Looping)</h3>
+            <p>Melakukan sesuatu berulang kali hingga selesai.</p>
+            <p><strong>Contoh Sehari-hari:</strong> "Jika Anda memiliki tugas untuk membersihkan kamar, Anda akan
+                melakukannya satu bagian demi satu bagian hingga seluruh kamar bersih."</p>
+        </section>
+
+        <section class="section" id="algoritma-dasar">
+            <h2>Algoritma Dasar</h2>
+            <h3>Pencarian Linear</h3>
+            <p>Mencari sesuatu dengan memeriksa satu per satu.</p>
+            <p><strong>Contoh Sehari-hari:</strong> "Jika Anda kehilangan kunci, Anda akan memeriksa setiap tempat di
+                rumah satu per satu (meja, laci, tas) hingga Anda menemukannya."</p>
+
+            <h3>Pengurutan Sederhana</h3>
+            <p>Mengurutkan sesuatu dengan membandingkan dan mengatur elemen.</p>
+            <p><strong>Contoh Sehari-hari:</strong> "Jika Anda memiliki beberapa buku dan ingin menyusunnya dari yang
+                terkecil ke yang terbesar, Anda akan membandingkan dua buku pada satu waktu dan mengatur mereka sesuai
+                ukurannya."</p>
+        </section>
+
+        <section class="section" id="pseudocode">
+            <h2>Pseudocode</h2>
+            <p>Menulis algoritma dengan menggunakan bahasa sehari-hari. Ini membantu Anda merencanakan algoritma tanpa
+                harus menggunakan kode komputer.</p>
+            <p><strong>Contoh Pseudocode untuk Mencari Kunci:</strong></p>
+            <pre><code>
+Mulai
+  Untuk setiap tempat di rumah
+    Jika kunci ditemukan di tempat tersebut
+      Katakan "Kunci ditemukan!"
+      Berhenti mencari
+  Jika selesai memeriksa semua tempat
+    Katakan "Kunci tidak ditemukan."
+Selesai
+            </code></pre>
+        </section>
+
+        <!-- Materi Tambahan -->
+        <section class="section" id="variabel">
+            <h2>Variabel dan Tipe Data</h2>
+            <p><strong>Variabel</strong>: Tempat untuk menyimpan informasi. Anggap variabel seperti kotak yang diberi
+                nama untuk menyimpan barang.</p>
+            <p><strong>Contoh:</strong> Jika Anda memiliki kotak bernama "umur", Anda bisa menyimpan angka 25 di
+                dalamnya.</p>
+            <p><strong>Tipe Data</strong>: Jenis informasi yang disimpan dalam variabel. Misalnya, angka (integer), teks
+                (string), dan angka desimal (float).</p>
+        </section>
+
+        <section class="section" id="operasi-aritmatika">
+            <h2>Operasi Aritmatika</h2>
+            <p>Operasi yang digunakan untuk melakukan perhitungan matematika dengan angka.</p>
+            <ul>
+                <li><strong>Penjumlahan (+)</strong>: Menambahkan dua angka. Contoh: 5 + 3 = 8</li>
+                <li><strong>Pengurangan (-)</strong>: Mengurangi satu angka dari angka lainnya. Contoh: 5 - 3 = 2</li>
+                <li><strong>Perkalian (*)</strong>: Mengalikan dua angka. Contoh: 5 * 3 = 15</li>
+                <li><strong>Pembagian (/)</strong>: Membagi satu angka dengan angka lainnya. Contoh: 6 / 3 = 2</li>
+            </ul>
+        </section>
+
+        <section class="section" id="struktur-data">
+            <h2>Struktur Data Dasar</h2>
+            <p>Tempat untuk menyimpan dan mengatur data.</p>
+            <ul>
+                <li><strong>Array</strong>: Daftar yang menyimpan beberapa nilai di bawah satu nama. Contoh: Daftar
+                    angka [1, 2, 3, 4]</li>
+                <li><strong>List</strong>: Serupa dengan array, tetapi lebih fleksibel dan bisa berisi berbagai jenis
+                    data.</li>
+            </ul>
+        </section>
+
+        <section class="section" id="fungsi-prosedur">
+            <h2>Fungsi dan Prosedur</h2>
+            <p><strong>Fungsi</strong>: Kumpulan langkah-langkah yang bisa digunakan kembali untuk melakukan tugas
+                tertentu. Anggap fungsi seperti resep memasak yang bisa dipakai berkali-kali.</p>
+            <p><strong>Contoh:</strong> Fungsi untuk menghitung luas lingkaran dengan rumus: luas = π * r^2</p>
+            <p><strong>Prosedur</strong>: Kumpulan langkah-langkah tanpa mengembalikan hasil. Biasanya digunakan untuk
+                melakukan serangkaian tindakan.</p>
+        </section>
+
+        <section class="section" id="debugging">
+            <h2>Debugging dan Uji Coba</h2>
+            <p><strong>Debugging</strong>: Proses menemukan dan memperbaiki kesalahan dalam algoritma atau kode.</p>
+            <p><strong>Contoh:</strong> Jika resep memasak tidak menghasilkan rasa yang diinginkan, Anda mungkin perlu
+                mengecek langkah-langkah dan bahan yang digunakan.</p>
+            <p><strong>Uji Coba</strong>: Menguji algoritma untuk memastikan ia bekerja dengan benar.</p>
+        </section>
+        <section class="source-info">
+            <h2>More Information</h2>
+            <p>Informasi Tambahan yang Lebih Detail & Lengkap dan Bisa Anda Pelajari Sendiri:</p>
+            <ul>
+                <li><a href="https://www.khanacademy.org/computing/computer-science" target="_blank">-Khan Academy</a>
+                </li>
+                <li><a href="https://www.geeksforgeeks.org/" target="_blank">-GeeksForGeeks</a></li>
+                <li><a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+                        target="_blank">-MIT OpenCourseWare</a></li>
+            </ul>
+            <p>Link diatas akan menambah ilmu dan pemahaman anda untuk Logika & Algoritma</p>
+        </section>
+    </main>
+    <footer>
+        <p>Made By <b>Vikesh</b></p>
+        <p>© 2024 Dasar Logika dan Algoritma</p>
+        <p><a href="mailto:vikeshpublic@gmail.com" class="contact-link"><i class="fas fa-phone"></i> Hubungi Kami</a>
+        </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
